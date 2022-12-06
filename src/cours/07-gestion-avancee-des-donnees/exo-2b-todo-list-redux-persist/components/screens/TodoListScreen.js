@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 
-import {actions as todoActions} from '../../redux/reducers/todoReducers';
+import {actions as todoActions} from '../../redux/reducers/todoReducer';
 
 import TodoListItem from '../items/TodoListItem';
 

@@ -2,7 +2,7 @@ import React, {useCallback} from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {useDispatch} from 'react-redux';
 
-import {actions as todoActions} from '../../redux/reducers/todoReducers';
+import {actions as todoActions} from '../../redux/reducers/todoReducer';
 
 const TodoListItem = ({item}) => {
   // on récupère la fonction dispatch qui nous permet d'envoyer nos actions au reducer

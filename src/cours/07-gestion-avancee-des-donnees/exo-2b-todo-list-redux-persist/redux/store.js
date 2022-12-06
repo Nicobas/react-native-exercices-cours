@@ -3,7 +3,7 @@ import {combineReducers, configureStore} from '@reduxjs/toolkit';
 import {persistReducer, persistStore} from 'redux-persist';
 import thunk from 'redux-thunk';
 
-import {reducer as todoReducer} from './reducers/todoReducers';
+import {reducer as todoReducer} from './reducers/todoReducer';
 
 const rootReducer = combineReducers({
   todo: todoReducer,

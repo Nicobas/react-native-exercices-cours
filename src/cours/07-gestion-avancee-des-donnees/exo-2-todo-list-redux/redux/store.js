@@ -1,6 +1,6 @@
 import {combineReducers, configureStore} from '@reduxjs/toolkit';
 
-import {reducer as todoReducer} from './reducers/todoReducers';
+import {reducer as todoReducer} from './reducers/todoReducer';
 
 // on combine nos reducers dans un reducer racine
 const rootReducer = combineReducers({

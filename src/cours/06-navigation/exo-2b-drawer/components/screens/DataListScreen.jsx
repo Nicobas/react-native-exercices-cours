@@ -7,6 +7,7 @@ import {
   Alert,
   StyleSheet,
 } from 'react-native';
+import DrawerButton from '../buttons/DrawerButton';
 
 const data = [
   'Julien',
@@ -34,6 +35,7 @@ const DataListScreen = () => {
 
   return (
     <SafeAreaView style={styles.screen}>
+      <DrawerButton />
       <FlatList style={styles.container} data={data} renderItem={renderItem} />
     </SafeAreaView>
   );

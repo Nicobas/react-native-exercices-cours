@@ -8,22 +8,14 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import {useNavigation} from '@react-navigation/native';
 
 import TodoListItem from '../items/TodoListItem';
+import DrawerButton from '../buttons/DrawerButton';
 
 const TodoListScreen = () => {
   const [data, setData] = useState([]);
   const [input, setInput] = useState('');
   const [search, setSearch] = useState('');
-
-  const navigation = useNavigation();
-
-  const openDrawer = useCallback(() => {
-    // on ouvre le drawer à l'aide de la fonction openDrawer de l'objet navigation, on peut aussi glisser le doigt du bord gauche de l'écran vers l'intérieur
-    navigation.openDrawer();
-  }, [navigation]);
 
   const addTodo = useCallback(() => {
     if (!input) {
@@ -60,9 +52,7 @@ const TodoListScreen = () => {
 
   return (
     <SafeAreaView style={styles.screen}>
-      <TouchableOpacity onPress={openDrawer} style={styles.drawerBtn}>
-        <FontAwesome name="navicon" size={30} color={'black'} />
-      </TouchableOpacity>
+      <DrawerButton />
       <TextInput
         style={styles.search}
         value={search}
@@ -126,10 +116,6 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     margin: 10,
     paddingHorizontal: 10,
-  },
-  drawerBtn: {
-    marginTop: 10,
-    marginLeft: 10,
   },
 });
 

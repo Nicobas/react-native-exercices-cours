@@ -9,6 +9,7 @@ import {
   Alert,
   StyleSheet,
 } from 'react-native';
+import DrawerButton from '../buttons/DrawerButton';
 
 const RegisterValidationScreen = () => {
   // Définition des states (un par input)
@@ -62,6 +63,7 @@ const RegisterValidationScreen = () => {
 
   return (
     <SafeAreaView style={styles.screen}>
+      <DrawerButton />
       <ScrollView style={styles.container}>
         <Text style={styles.titleText}>Inscription</Text>
         <Image

@@ -1,9 +1,11 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet, View} from 'react-native';
+import DrawerButton from '../buttons/DrawerButton';
 
 const FlexboxScreen = () => {
   return (
     <SafeAreaView style={styles.screen}>
+      <DrawerButton />
       <View style={styles.redBox} />
       <View style={styles.greenBox}>
         <View style={styles.yellowBox} />

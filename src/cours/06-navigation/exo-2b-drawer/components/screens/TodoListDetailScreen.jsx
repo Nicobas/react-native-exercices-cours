@@ -2,6 +2,7 @@ import React, {useCallback} from 'react';
 import {SafeAreaView, StyleSheet, Text, TouchableOpacity} from 'react-native';
 
 import {useNavigation} from '@react-navigation/native';
+import DrawerButton from '../buttons/DrawerButton';
 
 const TodoListDetailScreen = ({route}) => {
   const navigation = useNavigation();
@@ -14,6 +15,7 @@ const TodoListDetailScreen = ({route}) => {
 
   return (
     <SafeAreaView style={styles.screen}>
+      <DrawerButton />
       <TouchableOpacity onPress={goBack}>
         <Text style={styles.goBackText}>⬅️</Text>
       </TouchableOpacity>
